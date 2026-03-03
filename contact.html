@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Silvija Būbnelytė · Contact</title>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Silvija Būbnelytė">
+<link rel="stylesheet" href="styles.css">
+<script src="functions.js" defer></script>
+
+  <meta name="description" content="Contact information and form: Silvija Būbnelytė.">
+  <link rel="canonical" href="https://silvija-portfolio.local/contact.html">
+  <meta property="og:title" content="Silvija Būbnelytė · Contact">
+  <meta property="og:description" content="Contacts, links, and contact form.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.jpg">
+</head>
+
+<body>
+<header class="header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="images/profile.jpg" alt="Silvija Būbnelytė profile photo">
+      <div>
+        <div class="name">Silvija Būbnelytė</div>
+        <div class="role">AI Systems student · Vilnius Tech</div>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <button class="btn" type="button" onclick="toggleTheme()" aria-label="Toggle light/dark mode">🌗</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h1>Contact</h1>
+        <p class="sub">If you have an internship offer, project, or questions – feel free to reach out.</p>
+
+        <dl class="kv" style="margin-top:12px">
+          <dt>Phone</dt><dd><a href="tel:+37061470950">+370 614 70950</a></dd>
+          <dt>Email</dt><dd><a href="mailto:bubnelytesilvija@gmail.com">bubnelytesilvija@gmail.com</a></dd>
+          <dt>Address</dt><dd>Rūtų st. 1B, Platiniškės, Vilnius district</dd>
+        </dl>
+      </div>
+
+      <div class="card">
+        <h2>Contact form</h2>
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Select…</option>
+              <option value="internship">Internship / job opportunity</option>
+              <option value="project">Project / collaboration</option>
+              <option value="question">Question</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message…" required></textarea>
+            <!-- <div class="help">This form is for demonstration only (no backend). It fulfills the form element requirement.</div> -->
+          </div>
+
+          <div class="field">
+            <label>
+              <input type="checkbox" name="consent" required>
+              I agree that my data can be used for contact purposes.
+            </label>
+          </div>
+
+          <button class="primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Silvija Būbnelytė</p>
+  </div>
+</footer>
+</body>
+</html>
