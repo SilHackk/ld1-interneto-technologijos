@@ -1,0 +1,125 @@
+<!doctype html> <!-- Doctype deklaracija nurodo, kad tai yra HTML5 dokumentas -->
+<html lang="en"> <!-- Nustato dokumento kalbą į anglų -->
+<head> <!-- Galva, kurioje yra meta informacija, stiliai ir skriptai -->
+  <title>Silvija Būbnelytė · Portfolio</title> <!-- seo --> 
+
+  <meta charset="UTF-8"> <!-- encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
+  <meta name="robots" content="index, follow"> <!-- seo -->
+  <meta name="author" content="Silvija Būbnelytė"> <!-- seo -->
+
+  <meta name="description" content="Silvija Būbnelytė’s portfolio (Vilnius Tech): AI Systems, programming skills, projects, and experience."> <!-- seo -->
+  <meta name="keywords" content="Silvija Būbnelytė, portfolio, Vilnius Tech, AI Systems, HTML, CSS, JavaScript, Python"> <!-- seo -->
+  <link rel="canonical" href="https://silvija-portfolio.local/index.html"> <!-- seo -->
+  <meta property="og:title" content="Silvija Būbnelytė · Portfolio">
+  <meta property="og:description" content="Portfolio: skills, projects, and experience."> <!-- seo -->
+  <meta property="og:type" content="website"> <!-- seo -->
+  <meta property="og:image" content="../images/profile.jpg"> <!-- seo -->
+  <meta name="twitter:card" content="summary_large_image">  <!-- seo -->
+
+  <link rel="stylesheet" href="../css/styles.css"> <!-- Pagrindinis stilius -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Išorinis skriptas animuotam teksto efektui -->
+</head>
+
+<body> <!-- Kūnas, kuriame yra matomas turinys -->
+<header class="header"> <!-- Antraštė su navigacija -->
+  <a class="skip-link" href="#main">Skip to content</a> <!-- Praleidimo nuoroda, skirta pagerinti prieinamumą -->
+
+  <div class="header-inner"> <!-- Vidinis konteineris antraštėje, skirtas išdėstymui -->
+    <nav class="menu" aria-label="Primary navigation"> <!-- Pagrindinė navigacija su ARIA etikete -->
+      <a href="index.html" aria-current="page">Home</a> <!-- Nuoroda į pagrindinį puslapį, pažymėta kaip esama -->
+      <a href="resume.html">Resume</a> <!-- Nuoroda į gyvenimo aprašymą -->
+      <a href="contact.html">Contact</a> <!-- Nuoroda į kontaktų puslapį -->
+      <button class="btn" type="button" onclick="toggleTheme()" aria-label="Toggle light/dark theme">🌗</button> <!-- Mygtukas temos perjungimui -->
+    </nav> <!-- Užbaigia navigaciją -->
+  </div> <!-- Užbaigia vidinį konteinerį antraštėje -->
+</header> <!-- Užbaigia antraštę -->
+
+<!-- HERO (full page photo) -->
+<section class="hero-cover" aria-label="Intro"> <!-- Hero sekcija su dideliu fono paveikslėliu ir įvadiniu tekstu -->
+  <div class="hero-overlay"> <!-- Pusiau skaidrus sluoksnis virš fono paveikslėlio, skirtas geresniam teksto matomumui -->
+    <h1>Silvija Būbnelytė</h1> <!-- Pagrindinis antraštės tekstas -->
+    <p class="typing-line">  
+      <strong><span class="typed" data-typed-items="Student, Developer, Content creator, Model, Explorer, Makeup Artist"></span></strong> <!-- Dinamiškai keičiamas tekstas su animacija -->
+    </p> <!-- Užbaigia įvadinę eilutę -->
+    <div class="divider"></div>   <!-- Dekoratyvinė linija, skirianti įvadinę dalį nuo likusio turinio -->
+  </div> <!-- Užbaigia hero overlay -->
+</section> <!-- Užbaigia hero sekciją -->
+
+<main id="main"> <!-- Pagrindinis turinys, su id "main" praleidimo nuorodai -->
+  <!-- ABOUT: photo left, text right -->
+  <section class="section"> <!-- Apie mane sekcija su nuotrauka ir tekstu -->
+    <div class="container about-grid"> <!-- Konteineris su grid išdėstymu, skirtas apie mane turiniui -->
+      <div class="card about-photo"> <!-- Kortelė su nuotrauka, skirta apie mane sekcijai -->
+        <img class="profile-photo" src="../images/3.jpeg" alt="Portrait photo of Silvija"> <!-- Portreto nuotrauka su alt tekstu -->
+      </div>
+
+      <aside class="card"> <!-- Šoninė kortelė su tekstu, skirta apie mane sekcijai -->
+        <h2>About me</h2> <!-- Antraštė apie mane -->
+
+        <table class="table" aria-label="Summary">
+          <thead> <!-- Antraštė lentelėje, skirta santraukai -->
+            <tr><th>Section</th><th>Info</th></tr>
+          </thead> 
+          <tbody> <!-- Lentelės turinys, skirta santraukai --> 
+            <tr><td>Location</td><td>Vilnius, Lithuania</td></tr>
+            <tr><td>Study program</td><td>Artificial Intelligence Systems</td></tr>
+            <tr>
+              <td>Status</td>
+              <td><span class="badge">Looking for an internship / junior opportunities</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:18px"></h3>
+        <dl class="kv"> <!-- Apibrėžimų sąrašas, skirtas įgūdžiams, stiprybėms ir veikloms -->
+          <dt>Skills</dt><dd>C/C++/JS/HTML/CSS/Python</dd>
+          <dt>Strengths</dt><dd>Fast learning, technical background</dd>
+          <dt>Activities</dt><dd>Hackathons and IT conferences</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PROJECTS BELOW -->
+<section class="more-about">
+  <div class="container">
+    <div class="card">
+      <h2>Read more about me</h2>
+
+      <div class="projects">
+        <a href="projects.html" class="project more-card">
+          <img src="../images/4.jpeg" alt="IT projects">
+          <h3>IT projects</h3>
+          <p>Practical development through real-world projects.</p>
+        </a>
+
+        <a href="erasmus.html" class="project more-card">
+          <img src="../images/5.jpeg" alt="Erasmus Spain">
+          <h3>Erasmus Spain</h3>
+          <p>Stepping outside my comfort zone to grow internationally.</p>
+        </a>
+
+        <a href="hobbies.html" class="project more-card">
+          <img src="../images/6.jpeg" alt="Modeling, Makeup and Content Creation">
+          <h3>Modeling, Makeup and Content Creation</h3>
+          <p>Balancing technology with creativity and self-expression.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+
+<footer class="footer"> <!-- Poraštė su autorių teisių informacija ir kontaktų nuoroda -->
+  <div class="container">
+    <p>© <span id="year"></span> Silvija Būbnelytė · <a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+
+<script src="../js/functions.js" defer></script> <!-- Pagrindinis skriptas, kuris įkeliamas su "defer" atributu, kad jis būtų vykdomas po to, kai HTML yra visiškai įkeltas -->
+</body>
+</html>

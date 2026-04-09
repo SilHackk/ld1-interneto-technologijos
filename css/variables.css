@@ -1,0 +1,18 @@
+/* Šiame faile yra CSS kintamieji, kurie apibrėžia spalvų paletę ir kitus stiliaus elementus, 
+naudojamus visame projekte. 
+Kintamieji leidžia lengvai keisti dizainą ir palaikyti nuoseklumą visame svetainės stiliuje. */
+:root{
+  --bg:#0f172a;
+  --card:#111c33;
+  --text:#e5e7eb;
+  --muted:#b6c2d6;
+  --accent:#7c3aed;
+  --accent2:#22c55e;
+  --border: rgba(229,231,235,.15);
+
+  --bg-light:#ffffff;
+  --card-light:#f6f7fb;
+  --text-light:#0b1220;
+  --muted-light:#4b5563;
+  --border-light: rgba(15, 23, 42, .12);
+}
