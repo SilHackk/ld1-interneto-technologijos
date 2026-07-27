@@ -1,0 +1,28 @@
+/* Šiame faile yra CSS stiliai, kurie apibrėžia, kaip svetainė turėtų atrodyti ir elgtis įvairiuose ekrano dydžiuose.*/
+@media (max-width: 900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .projects{
+    grid-template-columns:1fr;
+  }
+
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+
+  .kv{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 860px){
+  .about-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo{
+    max-width: 360px;
+  }
+}

@@ -1,0 +1,112 @@
+/* Šiame faile yra CSS stiliai, kurie apibrėžia antraštės (header) išvaizdą ir funkcionalumą.
+Antraštė yra svarbi svetainės dalis, nes ji dažnai yra pirmasis dalykas, kurį lankytojai mato, ir ji suteikia navigacijos galimybes bei informacijos apie svetainę.
+Šiame faile naudojami stiliai apima foną, išdėstymą, spalvas ir kitus elementus, kurie padeda sukurti patrauklią ir funkcionalią antraštę. */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+body.dark-mode .header{
+  background: color-mix(in srgb, var(--bg), transparent 12%);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.menu a{
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:12px;
+  color: var(--muted-light);
+}
+
+body.dark-mode .menu a{
+  color: var(--muted);
+}
+
+.menu a:hover{
+  background: rgba(124,58,237,.12);
+  color: inherit;
+}
+
+.menu a[aria-current="page"]{
+  background: rgba(124,58,237,.18);
+  color: inherit;
+  border: 1px solid rgba(124,58,237,.25);
+}
+
+.btn{
+  border:1px solid var(--border-light);
+  background: transparent;
+  padding:8px 10px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+body.dark-mode .btn{
+  border:1px solid var(--border);
+}
+
+.btn:hover{
+  background: rgba(0,0,0,.05);
+}
+
+body.dark-mode .btn:hover{
+  background: rgba(255,255,255,.06);
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.brand img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid var(--border-light);
+}
+
+body.dark-mode .brand img{
+  border:1px solid var(--border);
+}
+
+.brand .name{
+  font-weight:800;
+  letter-spacing:.2px;
+}
+
+.brand .role{
+  font-size:.9rem;
+  color:var(--muted-light);
+}
+
+body.dark-mode .brand .role{
+  color:var(--muted);
+}

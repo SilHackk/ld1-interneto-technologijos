@@ -1,0 +1,7 @@
+/* Šiame faile yra pagrindiniai CSS stiliai, kurie apima visus kitus stiliaus failus. */
+@import url("variables.css");
+@import url("base.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("components.css");
+@import url("responsive.css");
