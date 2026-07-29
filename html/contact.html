@@ -53,7 +53,11 @@
       </div>
       <div class="card">
         <h2>Contact form</h2>
-        <form class="form" id="contactForm">
+        <form
+          class="form"
+          action="https://formspree.io/f/xeeydqad"
+          method="POST"
+        >
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Your name" required>
@@ -100,40 +104,5 @@
   </div>
 </footer>
 <script src="../js/functions.js" defer></script>
-<script>
-  const contactForm = document.getElementById("contactForm");
-
-  contactForm.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      topic: document.getElementById("topic").value,
-      message: document.getElementById("message").value,
-      consent: document.querySelector('input[name="consent"]').checked
-    };
-
-    try {
-      const response = await fetch("http://localhost:5000/api/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-        contactForm.reset();
-      } else {
-        alert("Something went wrong.");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Server connection error.");
-    }
-  });
-</script>
 </body>
 </html>
